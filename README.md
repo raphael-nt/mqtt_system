@@ -10,16 +10,16 @@ The project is divided into **two main parts**:
 mqtt_system/
 - qrscan/
 - qrscan_sub.js (subscribe : receive data via MQTT)
--- qrscan_pub.js (publish : read qrscan_data file and send data via MQTT)
--- qrscan_data.json
--- qrscan_data.txt (optional)
--- gen_data.py (generate example data)
+- qrscan_pub.js (publish : read qrscan_data file and send data via MQTT)
+- qrscan_data.json
+- qrscan_data.txt (optional)
+- gen_data.py (generate example data)
 - register/
--- register_sub.js (subscribe : receive data via MQTT)
--- register_pub.js (publish : read register_data file and send data via MQTT)
--- register_data.json
--- register_data.txt (optional)
--- gen_data.py (generate example data)
+- register_sub.js (subscribe : receive data via MQTT)
+- register_pub.js (publish : read register_data file and send data via MQTT)
+- register_data.json
+- register_data.txt (optional)
+- gen_data.py (generate example data)
 
 ---
 
@@ -84,4 +84,5 @@ node register_sub.js
 ```bash
 node register_pub.js
 ```
+
 
