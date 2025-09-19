@@ -2,8 +2,6 @@
 
 This project implements a **communication protocol using MQTT** for the course **010123131 Software Development Practice I (2025-1) Mini-Project**.  
 
-The project is divided into **two main parts**:
-
 ---
 
 ## Project Structure
@@ -84,6 +82,7 @@ node register_sub.js
 ```bash
 node register_pub.js
 ```
+
 
 
 
