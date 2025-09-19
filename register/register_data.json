@@ -1,0 +1,92 @@
+[
+  {
+    "firstName": "ขยานี",
+    "lastName": "เกียรติ",
+    "age": 50,
+    "gender": "ชาย",
+    "school": "โรงเรียนโยธินบูรณะ",
+    "email": "user9736@gmail.com",
+    "phone": "0347734317"
+  },
+  {
+    "firstName": "ขยานี",
+    "lastName": "สมศักดิ์",
+    "age": 35,
+    "gender": "ชาย",
+    "school": "โรงเรียนโยธินบูรณะ",
+    "email": "user6174@gmail.com",
+    "phone": "0381893881"
+  },
+  {
+    "firstName": "ชนิตรา",
+    "lastName": "บุญถึง",
+    "age": 36,
+    "gender": "หญิง",
+    "school": "โรงเรียนโยธินบูรณะ",
+    "email": "user0618@gmail.com",
+    "phone": "0371629996"
+  },
+  {
+    "firstName": "ธยาดา",
+    "lastName": "สมศักดิ์",
+    "age": 38,
+    "gender": "ชาย",
+    "school": "โรงเรียนโยธินบูรณะ",
+    "email": "user2930@gmail.com",
+    "phone": "0048131680"
+  },
+  {
+    "firstName": "กชพร",
+    "lastName": "บุญถึง",
+    "age": 58,
+    "gender": "ชาย",
+    "school": "โรงเรียนวีระพิทยา",
+    "email": "user4587@gmail.com",
+    "phone": "0506566359"
+  },
+  {
+    "firstName": "กชพร",
+    "lastName": "บุญถึง",
+    "age": 22,
+    "gender": "หญิง",
+    "school": "โรงเรียนกลาโหมอุทิศ",
+    "email": "user7496@gmail.com",
+    "phone": "0010462701"
+  },
+  {
+    "firstName": "กชพร",
+    "lastName": "จันทนา",
+    "age": 40,
+    "gender": "ชาย",
+    "school": "โรงเรียนโยธินบูรณะ",
+    "email": "user2003@gmail.com",
+    "phone": "0796308770"
+  },
+  {
+    "firstName": "กชพร",
+    "lastName": "เกียรติ",
+    "age": 14,
+    "gender": "ชาย",
+    "school": "โรงเรียนวีระพิทยา",
+    "email": "user3812@gmail.com",
+    "phone": "0661310633"
+  },
+  {
+    "firstName": "ชนิตรา",
+    "lastName": "เกียรติ",
+    "age": 46,
+    "gender": "หญิง",
+    "school": "โรงเรียนวีระพิทยา",
+    "email": "user6499@gmail.com",
+    "phone": "0143597917"
+  },
+  {
+    "firstName": "ชนิตรา",
+    "lastName": "เกียรติ",
+    "age": 40,
+    "gender": "ชาย",
+    "school": "โรงเรียนวีระพิทยา",
+    "email": "user1373@gmail.com",
+    "phone": "0381817311"
+  }
+]
