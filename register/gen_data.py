@@ -38,16 +38,30 @@ def generate_data(num_records):
 
 if __name__ == "__main__":
     data_list = generate_data(NUM_RECORDS)
-
     full_path = OUTPUT_FILE + (".json" if OUTPUT_FORMAT == "json" else ".txt")
 
     if OUTPUT_FORMAT == "txt":
-        with open(full_path, "w", encoding="utf-8") as f: # a
+        with open(full_path, "a", encoding="utf-8") as f:  # ใช้ append
             for r in data_list:
                 line = f"{r['firstName']},{r['lastName']},{r['age']},{r['gender']},{r['school']},{r['email']},{r['phone']}"
                 f.write(line + "\n")
+
     elif OUTPUT_FORMAT == "json":
-        with open(full_path, "w", encoding="utf-8") as f: # a
-            json.dump(data_list, f, ensure_ascii=False, indent=2)
+        # อ่านไฟล์เก่า
+        if os.path.exists(full_path):
+            with open(full_path, "r", encoding="utf-8") as f:
+                try:
+                    existing_data = json.load(f)
+                except json.JSONDecodeError:
+                    existing_data = []
+        else:
+            existing_data = []
+
+        # ต่อ record ใหม่
+        existing_data.extend(data_list)
+
+        # เขียนไฟล์ใหม่ทั้งหมด
+        with open(full_path, "w", encoding="utf-8") as f:
+            json.dump(existing_data, f, ensure_ascii=False, indent=2)
 
     print(f"Generated {NUM_RECORDS} records in {os.path.abspath(full_path)}")

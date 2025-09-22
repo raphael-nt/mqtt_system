@@ -1,0 +1,54 @@
+install node js in raspbian
+- sudo apt install -y npm
+- sudo apt install -y nodejs
+or
+- curl -fsSL https://deb.nodesource.com/setup_20.x | sudo -E bash -
+- sudo apt install -y nodejs
+
+download mosquitto
+in https://mosquitto.org/download/
+
+set config 
+in window "C:\Program Files\mosquitto\mosquitto.conf"
+in linux "/etc/mosquitto/mosquitto.conf"
+- listener 5555 0.0.0.0
+- allow_anonymous true
+
+run server
+in window
+- mosquitto -c "C:\Program Files\mosquitto\mosquitto.conf" -v
+in linux
+- sudo systemctl enable mosquitto
+- sudo systemctl start mosquitto
+- sudo systemctl status mosquitto
+or
+- mosquitto -c /etc/mosquitto/mosquitto.conf -v
+
+stop server
+in window
+- net stop mosquitto
+in linux
+- sudo systemctl stop mosquitto
+
+check port
+in window
+- netstat -ano | findstr 5555
+in linux
+- sudo netstat -tulnp | grep 5555
+
+kill process
+in window
+- taskkill /PID 6048 /F
+in linux
+- sudo kill -9 6048
+
+set port in firewall
+in window
+- New-NetFirewallRule -DisplayName "Mosquitto 5555" -Direction Inbound -LocalPort 5555 -Protocol TCP -Action Allow
+in linux
+- sudo ufw allow 5555/tcp
+- sudo ufw reload
+
+test
+- mosquitto_sub -h 192.168.2.146 -p 5555 -t test/topic -v
+- mosquitto_pub -h 192.168.2.146 -p 5555 -t test/topic -m "TEST TEST"
