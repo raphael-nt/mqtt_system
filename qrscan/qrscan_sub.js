@@ -1,7 +1,7 @@
 const mqtt = require('mqtt');
 
-//const client = mqtt.connect('mqtt://127.0.0.1:1883');
-const client = mqtt.connect('mqtt://broker.hivemq.com');
+const client = mqtt.connect('mqtt://172.20.10.2:5555');
+//const client = mqtt.connect('mqtt://broker.hivemq.com');
 
 let receive_data = [];
 
