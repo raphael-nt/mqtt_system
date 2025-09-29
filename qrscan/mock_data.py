@@ -7,8 +7,8 @@ import os
 OUTPUT_FILE = "qrscan_data.json"
 LOCATIONS = ["network", "programming", "electricity"]
 
-NUM_SUCCESS = 10
-NUM_RECORDS = 100
+NUM_SUCCESS = 2
+NUM_RECORDS = 10
 
 def generate_token(length=20):
     chars = string.ascii_letters + string.digits

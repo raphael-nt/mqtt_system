@@ -52,3 +52,29 @@ in linux
 test
 - mosquitto_sub -h 192.168.2.146 -p 5555 -t test/topic -v
 - mosquitto_pub -h 192.168.2.146 -p 5555 -t test/topic -m "TEST TEST"
+
+
+
+
+# =================================================================
+# Config
+# =================================================================
+
+# Broker
+listener 8883 0.0.0.0
+protocol mqtt
+# cafile /path/to/ca.crt
+# certfile /path/to/server.crt
+# keyfile /path/to/server.key
+# require_certificate true
+
+# WebSocket
+listener 8081 0.0.0.0
+protocol websockets
+# cafile /path/to/ca.crt
+# certfile /path/to/server.crt
+# keyfile /path/to/server.key
+# require_certificate true
+
+# No login required
+allow_anonymous true
